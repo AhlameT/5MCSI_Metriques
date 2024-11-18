@@ -44,8 +44,6 @@ def extract_minutes(date_string):
         date_object = datetime.strptime(date_string, '%Y-%m-%dT%H:%M:%SZ')
         minutes = date_object.minute
         return jsonify({'minutes': minutes})
-   except ValueError:
-        return jsonify({'error': 'Le format de date est erroné. Utilisez ce format: YYYY-MM-DDTHH:MM:SSZ'}), 400
   
 if __name__ == "__main__":
   app.run(debug=True)
