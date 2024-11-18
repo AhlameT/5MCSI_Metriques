@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Poppins', Arial, sans-serif;
-            background: linear-gradient(135deg, #f4f4f4, #e8f5e9);
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
             margin: 0;
             padding: 0;
             color: #333;
@@ -24,7 +24,7 @@
         h1 {
             text-align: center;
             font-size: 24px;
-            color: #388e3c;
+            color: #e91e63;
         }
         #chart_div {
             margin-top: 20px;
@@ -80,8 +80,8 @@
                 hAxis: {title: 'Minute', slantedText: true, slantedTextAngle: 45},
                 vAxis: {title: 'Nombre de commits'},
                 legend: {position: 'none'},
-                backgroundColor: '#e8f5e9',
-                colors: ['#43a047']
+                backgroundColor: '#fce4ec',
+                colors: ['#e91e63']
             };
 
             const chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
