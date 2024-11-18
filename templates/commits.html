@@ -50,7 +50,7 @@
     async function drawChart() {
         try {
             // Récupération des commits via l'API GitHub
-            const response = await fetch('https://api.github.com/repos/AhlameT/5MCSI_Metriques/commits');
+            const response = await fetch('https://api.github.com/AhlameT/5MCSI_Metriques/commits');
             if (!response.ok) throw new Error(`Erreur HTTP : ${response.status}`);
             
             const data = await response.json();
